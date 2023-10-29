@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.Design;
 using System.Diagnostics.Eventing.Reader;
 
 namespace Uzduotis07
@@ -43,6 +44,62 @@ namespace Uzduotis07
                     }
 
                     Console.WriteLine();
+
+                    {
+                        /*Liepkite vartotojui įvesti bet kokį skaičių. 
+                         * Išveskite į ekraną šio skaičiaus kvadratą.
+                         */
+
+                        Console.Write("Įveskite bet kokį skaičių: ");
+                        if (int.TryParse(Console.ReadLine(), out int skaicius));
+                        {
+                            int kvadratas = skaicius * skaicius;
+                            Console.WriteLine($"Skaičiaus {skaicius} kvadratas yra {kvadratas}");
+                        }
+
+                        {
+                            Console.WriteLine("Prašome įvesti skaičių.");
+                        }
+
+                        {
+                            /* Liepkite vartotojui įvesti tris skaičius. 
+                             * Išveskite visų šių skaičių sumą, 
+                             * nurodant atliekamus veiksmus ir šių skaičių reikšmes ekrane.
+                             * Pvz.:5 + 3 + 8 = 16
+                             */
+                            Console.Write("Įveskite pirmajį skaičių: ");
+                            if (int.TryParse(Console.ReadLine(), out int pirmasSkaicius)) ;
+                            {
+                                Console.Write("Įveskite antrajį skaičių: ");
+                                if (int.TryParse(Console.ReadLine(), out int antrasSkaicius)) ;
+                            }
+                            {
+                                Console.Write("Įveskite trečiajį skaičių: ");
+                                if (int.TryParse(Console.ReadLine(), out int treciasSkaicius)) ;
+                            }
+
+                            {
+                                int suma = pirmasSkaicius + antrasSkaicius + treciasSkaicius;
+                                Console.WriteLine($"{pirmasSkaicius} + {antrasSkaicius} + {treciasSkaicius});
+                            }
+                            else
+                            {
+                                Console.WriteLine("Trečias įvestas tekstas nėra skaičius. Prašome įvesti skaičių");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Antras įvestas tekstas nėra skaičius. Prašome įvesti skaičių");
+                            }
+                            else
+                            {
+                                Console.WriteLine("Trečias įvestas tekstas nėra skaičius. Prašome įvesti skaičių");
+                                Console.WriteLine();
+
+                            }
+
+                        }
+
+                    }
                 
                 }
 
