@@ -34,12 +34,6 @@ namespace Uzduotis01
             Console.WriteLine("Studijos programos pavadinimas " + studijosprogramospavadinimas);
             int atsiskaitytukredituskaicius = 100;
             Console.WriteLine("Atsiskaitytu kreditu skaicius " + atsiskaitytukredituskaicius);
-
-
-
-
-
-
         }
     }
 }
